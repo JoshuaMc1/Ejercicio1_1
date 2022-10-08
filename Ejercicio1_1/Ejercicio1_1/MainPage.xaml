@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_1.MainPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#68C5DB">
+            <Frame BackgroundColor="#0197F6" Padding="24" CornerRadius="0">
+                <Label 
+                Text="Ejercicio 1.1" 
+                HorizontalTextAlignment="Center" 
+                TextColor="White" 
+                FontSize="36"/>
+            </Frame>
+            <StackLayout Padding="10">
+                <Label 
+                Text="Ingrese un numero" 
+                FontSize="Medium" 
+                TextColor="White" 
+                FontAttributes="Bold"/>
+                <Entry 
+                x:Name="txtNumber1" 
+                Placeholder="Ingrese el primer numero" 
+                Keyboard="Numeric" 
+                VerticalOptions="StartAndExpand" 
+                TextColor="White" 
+                FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <Label 
+                Text="Ingrese otro numero" 
+                FontSize="Medium" 
+                TextColor="White" 
+                FontAttributes="Bold"/>
+                <Entry 
+                x:Name="txtNumber2" 
+                Placeholder="Ingrese el segundo numero" 
+                Keyboard="Numeric" 
+                VerticalOptions="StartAndExpand" 
+                TextColor="White" 
+                FontAttributes="Bold"/>
+            </StackLayout>
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition  Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button 
+                x:Name="btnSumar" 
+                Text="Suma" 
+                TextColor="White" 
+                BackgroundColor="DarkSlateBlue" 
+                BorderColor="White" 
+                CornerRadius="10"
+                Grid.Row="0" 
+                Grid.Column="0" 
+                Clicked="btnSumar_Clicked"/>
+                <Button 
+                x:Name="btnRestar" 
+                Text="Resta" 
+                TextColor="White" 
+                BackgroundColor="DarkSlateBlue" 
+                BorderColor="White" 
+                CornerRadius="10" 
+                Grid.Row="0" 
+                Grid.Column="1" 
+                Clicked="btnRestar_Clicked"/>
+                <Button 
+                x:Name="btnDividir" 
+                Text="Division" 
+                TextColor="White" 
+                BackgroundColor="DarkSlateBlue" 
+                BorderColor="White" 
+                CornerRadius="10" 
+                Grid.Row="1" 
+                Grid.Column="0" 
+                Clicked="btnDividir_Clicked"/>
+                <Button 
+                x:Name="btnMulti" 
+                Text="Multiplicar" 
+                TextColor="White" 
+                BackgroundColor="DarkSlateBlue" 
+                BorderColor="White" 
+                CornerRadius="10" 
+                Grid.Row="1" 
+                Grid.Column="1" 
+                Clicked="btnMulti_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
